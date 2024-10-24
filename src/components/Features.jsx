@@ -3,7 +3,7 @@ import featureImg from "../assets/a.png";
 
 const Features = () => {
   return (
-    <section className="bg-slate-50 py-20">
+    <section id="features" className="bg-slate-50 py-20">
       <div className="container mx-auto px-5">
         <div className="flex flex-col items-center justify-center md:flex-row md:space-x-12">
           <motion.div

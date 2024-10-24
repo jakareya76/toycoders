@@ -4,6 +4,7 @@ import heroImg from "../assets/b.png";
 const Banner = () => {
   return (
     <section
+      id="banner"
       style={{ backgroundImage: `url(${bannerBg})` }}
       className="w-full py-16 md:py-5 bg-cover -mt-28 relative"
     >

@@ -31,7 +31,7 @@ const renderIcon = (iconName) => {
 
 const OurWorkProcess = () => {
   return (
-    <section className="container mx-auto py-20 px-4">
+    <section id="work" className="container mx-auto py-20 px-4">
       <h2 className="text-2xl md:text-3xl text-center font-bold uppercase text-gray-800">
         Our Work Process
       </h2>

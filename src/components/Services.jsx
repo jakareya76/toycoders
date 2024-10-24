@@ -3,7 +3,7 @@ import { servicesData } from "../data/index";
 
 const Services = () => {
   return (
-    <section className="container mx-auto py-20">
+    <section id="services" className="container mx-auto py-20">
       <h2 className="text-3xl text-center font-medium uppercase">
         Our Services
       </h2>

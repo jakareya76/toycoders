@@ -5,19 +5,17 @@ import aboutImg from "../assets/2.png";
 const About = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.2,
   });
 
   return (
-    <section className="py-20 bg-slate-50">
+    <section id="about" className="py-20 bg-slate-50" ref={ref}>
       <div className="container mx-auto">
         <div className="flex flex-col justify-center gap-5 md:flex-row px-5">
           <motion.div
             className="w-full md:w-1/2 md:mt-20"
-            ref={ref}
             initial={{ opacity: 0, y: 50 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.5 }}
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-600 my-5">
               Toy Coders Ltd.
