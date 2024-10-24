@@ -2,7 +2,7 @@ import aboutImg from "../assets/2.png";
 
 const About = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-slate-50">
       <div className="container mx-auto">
         <div className="flex flex-col justify-center gap-5 md:flex-row">
           <div className="mt-20">

@@ -1,4 +1,5 @@
-import bannerBg from "../assets/banner.jpeg";
+import bannerBg from "../assets/bg.jpg";
+import heroImg from "../assets/b.png";
 
 const Banner = () => {
   return (
@@ -10,15 +11,28 @@ const Banner = () => {
 
       <div className="container mx-auto relative z-30">
         <div className="flex flex-col items-center justify-center h-screen">
-          <h2 className="text-5xl font-bold text-white">Hello World</h2>
-          <p className="text-white max-w-2xl text-center mx-auto my-5">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
-            mollitia explicabo quasi quis dolore! Illum, natus quos magni sed
-            possimus quaerat delectus aliquid exercitationem
-          </p>
-          <button className="px-8 py-4 text-white bg-blue-500 rounded-xl">
-            Learn More
-          </button>
+          <div className="flex flex-col mt-28 items-center justify-center gap-10 md:flex-row">
+            <div className="w-full md:w-1/2">
+              <h2 className="text-7xl font-bold text-white">
+                <span className="text-blue-500">Enter a World of </span>{" "}
+                Limitless Play
+              </h2>
+              <p className="text-white my-5">
+                Discover a universe where gaming meets innovation. <br /> Play,
+                connect, and experience like never before.
+              </p>
+              <button className="px-8 py-4 text-xl font-medium text-white bg-blue-600 rounded-xl duration-200 hover:bg-blue-700">
+                Get Started
+              </button>
+            </div>
+            <div className="w-full md:w-1/2">
+              <img
+                src={heroImg}
+                alt="hero-img"
+                className="w-full animate-slow-short-bounce"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
