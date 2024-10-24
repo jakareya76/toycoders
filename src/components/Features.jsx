@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import featureImg from "../assets/a.png";
 
 const Features = () => {
@@ -5,12 +6,23 @@ const Features = () => {
     <section className="bg-slate-50 py-20">
       <div className="container mx-auto px-5">
         <div className="flex flex-col items-center justify-center md:flex-row md:space-x-12">
-          {/* Feature Image */}
-          <div className="w-full md:w-1/2 mb-10 md:mb-0">
+          <motion.div
+            className="w-full md:w-1/2 mb-10 md:mb-0"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
             <img src={featureImg} alt="feature" className="w-full rounded-lg" />
-          </div>
-          {/* Feature Text Content */}
-          <div className="w-full md:w-1/2">
+          </motion.div>
+
+          <motion.div
+            className="w-full md:w-1/2"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
             <h4 className="text-xl md:text-3xl font-bold max-w-xl text-gray-800 mb-4">
               A Branded Game Creating Modern & Engaging Online Experience
             </h4>
@@ -34,7 +46,7 @@ const Features = () => {
               <li>Partial reskin games</li>
               <li>Full Game Reskin</li>
             </ul>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const Contact = () => {
   return (
     <section className="container mx-auto py-20 px-5">
@@ -7,13 +9,17 @@ const Contact = () => {
       <div className="w-14 h-[3px] bg-blue-500 mx-auto my-5"></div>
       <p className="mx-auto text-sm max-w-2xl text-gray-700 font-medium text-center">
         We thrive when coming up with innovative ideas but also understand that
-        a smart concept should be supported with faucibus sapien odio measurable
-        results.
+        a smart concept should be supported with measurable results.
       </p>
 
       <div className="flex items-center justify-center mt-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true }}
+          >
             <div className="space-y-1 mb-5">
               <h4 className="font-medium">TOYCODERS LTD</h4>
               <p className="text-gray-600">
@@ -30,8 +36,14 @@ const Contact = () => {
               <h4 className="font-medium">Working Hours:</h4>
               <p className="text-gray-600">9:00AM To 6:00PM</p>
             </div>
-          </div>
-          <div className="col-span-2">
+          </motion.div>
+          <motion.div
+            className="col-span-2"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true }}
+          >
             <form>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
                 <input
@@ -60,7 +72,7 @@ const Contact = () => {
                 Send Message
               </button>
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

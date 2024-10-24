@@ -2,8 +2,8 @@ import { IoPencilOutline } from "react-icons/io5";
 import { workProcessData } from "../data";
 import { PiQuotesLight } from "react-icons/pi";
 import { GoGoal } from "react-icons/go";
+import { motion } from "framer-motion";
 
-// Function to render icons
 const renderIcon = (iconName) => {
   switch (iconName) {
     case "pencil":
@@ -32,7 +32,6 @@ const renderIcon = (iconName) => {
 const OurWorkProcess = () => {
   return (
     <section className="container mx-auto py-20 px-4">
-      {/* Title */}
       <h2 className="text-2xl md:text-3xl text-center font-bold uppercase text-gray-800">
         Our Work Process
       </h2>
@@ -42,12 +41,15 @@ const OurWorkProcess = () => {
         guidance throughout the process.
       </p>
 
-      {/* Work Process Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         {workProcessData.map((work, idx) => (
-          <div
+          <motion.div
             key={idx}
             className="flex flex-col items-center border py-8 px-6 rounded-xl transition transform duration-300 cursor-pointer hover:shadow-lg hover:-translate-y-3 bg-white"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: idx * 0.1 }}
+            viewport={{ once: true }}
           >
             {renderIcon(work.icon)}
             <h3 className="text-xl my-4 font-semibold text-gray-700">
@@ -56,7 +58,7 @@ const OurWorkProcess = () => {
             <p className="text-center text-gray-500 text-sm max-w-sm">
               {work.text}
             </p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
