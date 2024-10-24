@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto">
-        <div className="flex justify-center gap-5">
+        <div className="flex flex-col justify-center gap-5 md:flex-row">
           <div className="mt-20">
             <h2 className="text-5xl font-bold text-blue-500 my-5">
               Toy Coders Ltd.
@@ -34,7 +34,7 @@ const About = () => {
             </ul>
           </div>
           <div>
-            <img src={aboutImg} alt="about" className="max-w-xl" />
+            <img src={aboutImg} alt="about" className="md:max-w-xl" />
           </div>
         </div>
       </div>
