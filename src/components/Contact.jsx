@@ -1,11 +1,11 @@
 const Contact = () => {
   return (
-    <section className="container mx-auto py-20">
-      <h2 className="text-3xl text-center font-medium uppercase">
+    <section className="container mx-auto py-20 px-5">
+      <h2 className="text-2xl md:text-3xl text-center font-medium uppercase">
         Get In Touch
       </h2>
       <div className="w-14 h-[3px] bg-blue-500 mx-auto my-5"></div>
-      <p className="mx-auto max-w-2xl text-gray-700 font-medium text-center">
+      <p className="mx-auto text-sm max-w-2xl text-gray-700 font-medium text-center">
         We thrive when coming up with innovative ideas but also understand that
         a smart concept should be supported with faucibus sapien odio measurable
         results.

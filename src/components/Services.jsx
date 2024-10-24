@@ -7,12 +7,12 @@ const Services = () => {
         Our Services
       </h2>
       <div className="w-14 h-[3px] bg-blue-500 mx-auto my-5"></div>
-      <p className="mx-auto max-w-2xl text-gray-700 font-medium text-center text-xl">
+      <p className="mx-auto max-w-2xl text-gray-700 font-medium text-center md:text-xl">
         Expert Services for Software and Game Development, Customized to Your
         Vision and Needs. Let's Build Together
       </p>
 
-      <div className="flex items-center justify-center mt-16">
+      <div className="flex items-center justify-center mt-16 px-5">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {servicesData.map((service, idx) => {
             return (

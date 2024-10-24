@@ -4,9 +4,9 @@ const About = () => {
   return (
     <section className="py-20 bg-slate-50">
       <div className="container mx-auto">
-        <div className="flex flex-col justify-center gap-5 md:flex-row">
-          <div className="mt-20">
-            <h2 className="text-5xl font-bold text-blue-500 my-5">
+        <div className="flex flex-col justify-center gap-5 md:flex-row px-5">
+          <div className="w-full md:w-1/2 md:mt-20">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-600 my-5">
               Toy Coders Ltd.
             </h2>
             <p className="max-w-2xl text-justify text-gray-500">
@@ -33,8 +33,8 @@ const About = () => {
               <li>We are committed to providing excellent customer service.</li>
             </ul>
           </div>
-          <div>
-            <img src={aboutImg} alt="about" className="md:max-w-xl" />
+          <div className="w-full md:w-1/2">
+            <img src={aboutImg} alt="about" className="w-full" />
           </div>
         </div>
       </div>
