@@ -73,3 +73,21 @@ export const servicesData = [
     img: s12,
   },
 ];
+
+export const workProcessData = [
+  {
+    title: "Tell us your needs.",
+    text: "This is the most important step, as it helps us to understand what you are looking for and how we can best meet your needs.",
+    icon: "pencil",
+  },
+  {
+    title: "Get free quotes.",
+    text: "Upon grasping your needs, we'll furnish you with free quotes. Your vision, aligned with our pricing – a seamless synergy.",
+    icon: "quote",
+  },
+  {
+    title: "Delivery quality product and service.",
+    text: "Once you have chosen a quote, we will work to deliver the product or service to you in a timely and efficient manner.",
+    icon: "goal",
+  },
+];
